@@ -1,0 +1,74 @@
+.boxsize{
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    background-color: rosybrown;
+    border: 5px solid red;
+    padding: 50px;
+}
+.animate1{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-delay: 2s;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 100px;}
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: antiquewhite;
+    padding: 10px;
+    height: 200px;
+    width: 400px;
+}
+.grid-container > div {
+    background-color: blueviolet;
+
+}
+.item1{
+grid-row-start: 1;
+grid-row-end: 3;
+}
+.grid-contain {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: antiquewhite;
+    padding: 10px;
+    height: 200px;
+    width: 400px;
+}
+.grid-contain > div {
+    background-color: blueviolet;
+}
+.item2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    .boxer{
+        height: 100px;
+        width: 100px;
+        background-color: hotpink;
+        margin: 100px;
+        padding-left: 50px;
+        padding-top: 50px;
+        margin: 10px solid brown;
+    }
+    .visit{
+        height: 100px;
+        width: 100px;
+        background-color: hotpink;
+        animation-name: visited;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes visited {
+        from{background-color: blue;}
+        to{background-color: yellow;}
+    }
